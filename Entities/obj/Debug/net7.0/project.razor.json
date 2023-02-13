@@ -1,0 +1,20 @@
+{
+  "SerializedFilePath": "c:\\Users\\navee\\Desktop\\Microservice\\UserServices\\Entities\\obj\\Debug\\net7.0\\project.razor.json",
+  "FilePath": "c:\\Users\\navee\\Desktop\\Microservice\\UserServices\\Entities\\Entities.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1100
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}
