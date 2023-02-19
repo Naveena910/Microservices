@@ -13,7 +13,7 @@ using System.Net;
 
 namespace User_Service.Controllers
 {
-  
+
     [ApiController]
     [Authorize]
     [Route("api/user")]
@@ -105,7 +105,7 @@ namespace User_Service.Controllers
         /// </summary>
         /// <param name="id"></param>
         [HttpGet]
-        [AllowAnonymous]
+       // [AllowAnonymous]
         [Route("{id:guid}")]
         public IActionResult GetUserById([FromRoute] Guid id)
         {
@@ -113,7 +113,7 @@ namespace User_Service.Controllers
             {
                 UserDto user = _userService.GetUserById(id);
                 _logger.LogInformation("Getting user account with user id");
-                return StatusCode(StatusCodes.Status200OK, user);
+                return Ok(user);
             }
             catch (UnauthorizedException e)
             {
@@ -149,7 +149,7 @@ namespace User_Service.Controllers
                     return StatusCode(StatusCodes.Status204NoContent, new ErrorDto { ErrorMessage = "No Content", StatusCode = (int)HttpStatusCode.NoContent, Description = "No address found with this user Id" });
                 }
                 _logger.LogInformation("Getting all user account ");
-                return StatusCode(StatusCodes.Status200OK, users);
+                return Ok(users);
             }
             catch (ForbiddenException )
 

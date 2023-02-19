@@ -4,6 +4,7 @@ using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Helpers;
@@ -32,6 +33,8 @@ namespace XUnitUser
             User user = new User();
 
             user.Id = Guid.Parse("c572c99e-ee1f-4d17-b69c-08dae952ed26");
+        
+
             user.Password = "Navee@2002";
             user.FirstName = "Naveena";
             user.LastName = "T";
